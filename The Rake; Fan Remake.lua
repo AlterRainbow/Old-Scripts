@@ -14,8 +14,7 @@ local dropTP = tp:Dropdown("Teleport to:", {
     ["Power Station"] = game:GetService("Workspace").PowerStation.InteractionPart.Position,
     ["Radio Station"] = game:GetService("Workspace").RadioStation.CollisionModel.Part.Position,
     ["Tower 1"] = game:GetService("Workspace").Tower.Top.Chair.Position + Vector3.new(0, 4, 0),
-    ["Tower 2"] = game:GetService("Workspace").Tower2.Floor.Position + Vector3.new(0, 5, 0),
-    ["Campsite"] = game:GetService("Workspace").Campsite["Wooden Crate of Bottle of Wo'A"]["Wooden Crate (Empty)"].Union.Position
+    ["Tower 2"] = game:GetService("Workspace").Tower2.Floor.Position + Vector3.new(0, 5, 0)
     },
     function(chsn)
         if not game.Players.LocalPlayer.Character then
