@@ -1,3 +1,4 @@
+local version = "v1.0"
 local code
 local ac = true
 local plr = game.Players.LocalPlayer
@@ -42,4 +43,4 @@ for a, b in pairs(titans:GetChildren()) do
     remote:FireServer(code, b.Nape)
 end
 
-print(v1.0)
+print(version)
