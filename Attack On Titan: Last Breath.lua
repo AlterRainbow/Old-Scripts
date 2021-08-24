@@ -1,4 +1,4 @@
-local version = "v1.0"
+local version = "v1.1"
 local code
 local ac = true
 local plr = game.Players.LocalPlayer
