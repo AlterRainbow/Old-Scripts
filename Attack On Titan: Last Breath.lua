@@ -41,3 +41,5 @@ for a, b in pairs(titans:GetChildren()) do
     wait(0.2)
     remote:FireServer(code, b.Nape)
 end
+
+print(v1.0)
