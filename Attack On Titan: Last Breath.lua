@@ -3,6 +3,7 @@ local ac = true
 local plr = game.Players.LocalPlayer
 local titans = game.workspace.Titans
 local remote = game.workspace.Settings.Input
+local cooltitans = {"EREN", "FemaleTitan"}
 local lag = {"Script", "Smoke", "BloodTexture"}
 local lagParticles = plr.Character:GetDescendants()
 
@@ -32,7 +33,7 @@ for i = 1, #lagParticles do
 end
 
 for a, b in pairs(titans:GetChildren()) do
-    if b.Main.Died.Value then return end
+    if b.Main.Died.Value and not table.find(cooltitans, b.Name) then return end
     
     repeat wait() until plr.Character
         
