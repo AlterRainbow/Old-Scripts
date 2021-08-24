@@ -1,4 +1,4 @@
-local version = "v1.1"
+local version = "v1.2"
 local code
 local ac = true
 local plr = game.Players.LocalPlayer
@@ -33,6 +33,8 @@ for i = 1, #lagParticles do
     end
 end
 
+print(version)
+
 for a, b in pairs(titans:GetChildren()) do
     if table.find(cooltitans, b.Name) then return end
     if b.Main.Died.Value then return end
@@ -43,5 +45,3 @@ for a, b in pairs(titans:GetChildren()) do
     wait(0.2)
     remote:FireServer(code, b.Nape)
 end
-
-print(version)
