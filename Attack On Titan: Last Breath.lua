@@ -34,7 +34,8 @@ for i = 1, #lagParticles do
 end
 
 for a, b in pairs(titans:GetChildren()) do
-    if b.Main.Died.Value and table.find(cooltitans, b.Name) then return end
+    if table.find(cooltitans, b.Name) then return end
+    if b.Main.Died.Value then return end
     
     repeat wait() until plr.Character
         
