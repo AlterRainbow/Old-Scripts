@@ -47,7 +47,7 @@ local chosenTitan = "Colossal Titan"
 local plr = game.Players.LocalPlayer
 local shiftpath = plr.Backpack.Shift.ShiftEvents
 local plrchar = plr.Character
-local nigga = "heckoff"
+local hckff = "heckoff"
 local change = plr.PlayerGui.Titan.Customize
 local changeshop = plr.PlayerGui.Shop.Customize
 
@@ -107,8 +107,8 @@ local shiftremote = titansShift[chosenTitan]
 local maketitanremote = titansMake[chosenTitan]
 
 changeTitans[chosenTitan]:FireServer()
-shiftremote:FireServer(plr, plrchar, nigga)
-maketitanremote:FireServer(plr, plrchar, nigga)
+shiftremote:FireServer(plr, plrchar, hckff)
+maketitanremote:FireServer(plr, plrchar, hckff)
 
 --// Blind all titans.
 
@@ -159,10 +159,10 @@ damagehumanremote:FireServer(plr.Character.Humanoid, damage)
 
 local plr = game.Players.LocalPlayer
 local plrchar = plr.Character
-local nigga = "heckoff"
+local hckff = "heckoff"
 local crystalizeremote = plr.Backpack.Shift.ShiftEvents.Crystalize
 
-crystalizeremote:FireServer(plr, plrchar, nigga)
+crystalizeremote:FireServer(plr, plrchar, hckff)
 
 --// Activate super heal.
 
@@ -170,3 +170,5 @@ local plrchar = game.Players.LocalPlayer.Character
 local superhealremote = game.workspace.RemoteServer.ActivateSuperHeal
 
 superhealremote:FireServer(plrchar)
+
+-- Alter#6089
