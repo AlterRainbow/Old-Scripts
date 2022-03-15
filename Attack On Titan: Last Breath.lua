@@ -22,7 +22,7 @@ for x, y in pairs(getgc(true)) do
 end
 
 if ac then
-    plr:Kick("Bypass was ni gedisabled ah nigger zeg da tegen mij")
+    plr:Kick("bypass failed")
 end
 
 for i = 1, #lagParticles do
