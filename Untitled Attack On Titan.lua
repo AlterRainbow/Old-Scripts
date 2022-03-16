@@ -4,7 +4,7 @@ local plr = game.Players.LocalPlayer
 local TweenService = game:GetService("TweenService")
 local noclipE = false
 local antifall = nil
-local tp_speed = 20
+local tp_speed = 250
 local infinite_gas = false
 local infinite_blade_durability = false
 local mt = getrawmetatable(game)
@@ -76,7 +76,7 @@ Main.Slider({
     Callback = function(speed) tp_speed = speed end,
     Min = 100,
     Max = 500,
-    Def = 250
+    Def = tp_speed
 })
 
 Main.Toggle({
